@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.nec</groupId>
+	<artifactId>apis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>hotel-checkin</name>
+	<description>Hotel CheckIn</description>
+	<packaging>pom</packaging>
+
+	<properties>
+		
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <hotels.version>${project.version}</hotels.version>
+        <sms-client.version>${project.version}</sms-client.version>
+        <email-client.version>${project.version}</email-client.version>
+        <pms-client.version>${project.version}</pms-client.version>
+        <master-client.version>${project.version}</master-client.version>
+        <ocr-client.version>${project.version}</ocr-client.version>
+        <document.version>${project.version}</document.version>
+        <exception-handler.version>${project.version}</exception-handler.version>
+        <face-recognition-client.version>${project.version}</face-recognition-client.version>
+        <oauth-client.version>${project.version}</oauth-client.version>
+      
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <retrofit.version>2.6.1</retrofit.version>
+        <okhttp.version>4.2.2</okhttp.version>
+       
+    </properties>
+
+    <modules>
+    
+    <module>hotels</module>
+    <module>ocr-client</module>
+    <module>pms-client</module>
+    <module>sms-client</module>
+    <module>email-client</module> 
+    <module>master-client</module>
+    <module>document</module>
+    <module>face-recognition-client</module>
+    <module>oauth-client</module>
+     <module>exception-handler</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+        
+        
+        
+          <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>hotels</artifactId>
+                <version>${hotels.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>exception-handler</artifactId>
+                <version>${exception-handler.version}</version>
+            </dependency>
+        
+         <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>sms-client</artifactId>
+                <version>${sms-client.version}</version>
+            </dependency>
+        
+        
+         <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>email-client</artifactId>
+                <version>${email-client.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>pms-client</artifactId>
+                <version>${pms-client.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>master-client</artifactId>
+                <version>${master-client.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>ocr-client</artifactId>
+                <version>${email-client.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>document</artifactId>
+                <version>${document.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>face-recognition-client</artifactId>
+                <version>${face-recognition-client.version}</version>
+            </dependency>
+            
+              <dependency>
+                <groupId>com.nec</groupId>
+                <artifactId>oauth-client</artifactId>
+                <version>${oauth-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>converter-jackson</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>adapter-rxjava2</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+            
+            <dependency>
+    			<groupId>org.springframework.boot</groupId>
+   			 		<artifactId>spring-boot-starter</artifactId>
+   			 		<version>2.2.2.RELEASE</version>
+			</dependency>
+         
+<!-- 			<dependency> -->
+<!--     			<groupId>io.springfox</groupId> -->
+<!--     			<artifactId>springfox-swagger2</artifactId> -->
+<!--     			<version>${springfox.snapshotversion}</version> -->
+<!-- 			</dependency> -->
+			
+<!-- 			<dependency> -->
+<!--     			<groupId>io.springfox</groupId> -->
+<!--     			<artifactId>springfox-swagger2</artifactId> -->
+<!--     			<version>${springfox.version}</version> -->
+<!-- 			</dependency> -->
+		
+<!-- 			<dependency> -->
+<!-- 				<groupId>io.springfox</groupId> -->
+<!-- 				<artifactId>springfox-bean-validators</artifactId> -->
+<!-- 				<version>${springfox.version}</version> -->
+<!-- 			</dependency> -->
+			
+<!-- 			<dependency> -->
+<!--     			<groupId>io.springfox</groupId> -->
+<!--     			<artifactId>springfox-swagger-ui</artifactId> -->
+<!--     			<version>${springfox.version}</version> -->
+<!-- 			</dependency> -->
+        </dependencies>
+    </dependencyManagement>
+    
+    
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <classifier>exe</classifier>
+            </configuration>
+        </plugin>
+    </plugins>
+
+</build>
+    
+</project>
