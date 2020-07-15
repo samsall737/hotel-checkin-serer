@@ -1,0 +1,10 @@
+com\nec\master\config\MasterConfig.class
+com\nec\master\MasterClientApplication.class
+com\nec\master\model\Configuration.class
+com\nec\master\model\DBConnection.class
+com\nec\master\client\MasterClient.class
+com\nec\master\model\Address.class
+com\nec\master\model\User.class
+com\nec\master\gateway\MasterGateway.class
+com\nec\master\model\Chain.class
+com\nec\master\model\Hotel.class
