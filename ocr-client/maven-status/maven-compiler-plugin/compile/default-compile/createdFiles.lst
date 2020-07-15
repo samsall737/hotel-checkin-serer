@@ -1,0 +1,7 @@
+com\nec\ocr\config\OCRConfig.class
+com\nec\ocr\enums\DocumentPage.class
+com\nec\ocr\client\OCRClient.class
+com\nec\ocr\gateway\OCRGateway.class
+com\nec\ocr\enums\DocumentType.class
+com\nec\ocr\OCRClientApplication.class
+com\nec\ocr\model\OCRResponse.class
