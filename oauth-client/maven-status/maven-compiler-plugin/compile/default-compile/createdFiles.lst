@@ -1,0 +1,5 @@
+com\nec\oauth\gateway\AuthGateway.class
+com\nec\oauth\config\OAuthConfig.class
+com\nec\oauth\model\Token.class
+com\nec\oauth\client\AuthClient.class
+com\nec\oauth\OAuthClientApplication.class
